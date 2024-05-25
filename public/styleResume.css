@@ -1,0 +1,75 @@
+body{
+    background-color: AF8F6F;
+}
+.container{
+    background-color: F8F4E1;
+    position: relative;
+    border: 3px solid beige;
+    left: 300px;
+    top: 70px;
+    width: 870px;
+    height: 1400px;
+    border-radius: 10%;
+}
+.topbox{
+    position: relative;
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    left: 100px;
+}
+.topbox > p {
+    text-align: end;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    float: left;
+    left: 10px;
+    top: 30px;
+}
+.skills {
+    background-color: aquamarine;
+    
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    left: 10px;
+}
+.skills > h2,.experience > h2,.projects > h2 , .education > h2{
+    text-align: center;
+}
+.experience{
+   position: relative;
+    background-color: 240750;
+    color: white;
+    width: 800px;
+    height: 700px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    left: 10px;
+    
+}
+.projects{
+    background-color: darkred;
+    color: white;
+    font-size: 15px;
+    width: 800px;
+    height: 160px;
+    border-radius: 10px;   
+}
+.education{
+    position: relative;
+    display: inline-block;
+    background-color: lavender;
+   left: 100px;
+   border-radius: 10px;
+   padding: 1%;
+}
