@@ -6,101 +6,18 @@
         <title>Project</title>
     </head>
     <div class="project">
-    <body id="page3">
-        <h1>Azure Resource Name Generation</h1>
-        <img src="images/website.png" alt="Name Generation App" style="width:100%; height:auto;">
-        <div class="overview">
-            <h2>Overview</h2>
-            <p>This web application was created to automate the generation of names for Azure resources following specific naming conventions. It was developed using Full Stack Django for the backend and a combination of HTML, CSS, Bootstrap, and JavaScript for the frontend</p>
-        </div>
-
-        <div class="requirements">
-            <h2>Requirements</h2>
-            <ul>
-                <li>Generate names based on a specific convention with constant and variable selection options.</li>
-                <li>Automate fetching and updating of resource type acronyms from Microsoft.</li>
-                <li>Ensure compatibility with Azure naming conventions and allow for bulk name generation.</li>
-            </ul>
-        </div>
-
-        <div class="development">
-            <h2>Development Steps</h2>
-            <h3>Step 1: Planning and Resource Gathering</h3>
-            <ul>
-                <li><b>Learning Phase:</b> Undertook a Full Stack Django course on Udemy to gain foundational knowledge in web development.</li>
-                <li><b>Requirement Analysis:</b>  Listed the requirements for the website, focusing on the name generation logic and selection options.</li>
-                <li><b>UI Design:</b> Decided on a drop-down menu interface for user selections to ensure ease of use and consistency.</li>
-            </ul>
-        </div>
-
-        <div class="backend">
-            <ul>
-                <li><b>Backend Technology:</b>Chose Python with Django framework for its simplicity and powerfli libraries.</li>
-                <li><b>Web Scraping:</b> Implemented a web scraper using Python to fetch and update the list of resource type acronyms from Microsoft daily.
-                <ul>
-                    <li><b>Data Storage:</b> Stored the scraped data in a CSV file, which is then used to popliate dropdown menus.</li>
-                </ul>
-                </li>
-                
-                <li><b>Database Management:</b>  Used CSV files for data storage, avoiding traditional databases.</li>
-                <li><b>Server-Side Logic</b> Developed views and logic to handle user requests and generate names based on selected options.</li>
-            </ul>
-        </div>
-
-        <div class="frontend">
-            <ul>
-            <li><b>Frontend Technology:</b> Used HTML, CSS, Bootstrap, and JavaScript for building the user interface.</li>
-            <li><b>Drop-Down Menus:</b> Created dynamic drop-down menus with multiple selection capabilities.</li>
-            <li><b>JavaScript Implementation:</b>  <ul>
-                <li><b>Syntax Similarity:</b>Leveraged Java-like syntax for ease of learning.</li>
-                <li><b>Scope Management: </b>Faced challenges with code organization and variable/function scope.</li>
-                <li><b>Security:</b>Identified the need for enhanced security measures.</li>
-            </ul></li>
-            <li><b>CSS and Bootstrap:</b><ul>
-                <li><b>Design Challenges:</b>Encountered difficulties in implementing custom features with Bootstrap.</li>
-                <li><b>Creative Process:</b>Opted for a clean, simple design to ensure functionality and aesthetics.</li>
-                <li><b>Compatibility Issues:</b> Resolved conflicts between different Bootstrap versions for desired features.</li>
-
-            </ul></li>
-
-            
-
-            </ul>
-        </div>
-
-        <div class="conclusion">
-            <h2>Project Conclusion</h2>
-            <ul>
-                <li><b>Functionality: </b> Successfully generated names but lacked full automation due to the need for unique human-entered names.</li>
-                <li><b>Deployment:</b>Ran the application in a Docker container for testing but did not deploy it on Azure Web Apps due to limited practical use.</li>
-                <li><b>Learning Outcomes:</b>Gained substantial knowledge and experience in web development, both frontend and backend, despite the project's limitations.</li>
-            </ul>
-        </div>
-
-        <div class="key_components">
-            <h2>Key Components</h2>
-            <h3>Backend</h3>
-            <ul>
-                <li><b>Django Framework: </b>For handling server-side operations.</li>
-                <li><b>Python: </b> For scripting and web scraping.</li>
-                <li><b>CSV Storage: </b> For managing and updating resource type acronyms.</li>
-            </ul>
-            <h3>Frontend</h3>
-            <ul>
-                <li><b>HTML5: </b>For structuring the web pages.</li>
-                <li><b>CSS and Bootstrap</b>  For styling and responsive design.</li>
-                <li><b>JavaScript:</b> For dynamic functionality and user interactions.</li>
-            </ul>
-        </div>
-
-        <div class="final">
-            <h2>Final Remarks</h2>
-            <p>
-                This project provided valuable hands-on experience in web development and highlighted areas for future learning and improvement. Despite its limitations, it served as a significant learning milestone and contributed to my professional growth during the co-op term.
-            </p>
-        </div>
-        
-    </body>
+        <body>
+            <header>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./name_generation.html">Name Generation</a></li>
+                        <li><a href="./tic-tac-toe.html">Tic Tac Toe</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </header>
+        </body>
 </div>
-    <link rel="stylesheet" type="text/css" href="styleProject.css">
+    <link rel="stylesheet" type="text/css" href="styleProjectPage.css">
 </html>
