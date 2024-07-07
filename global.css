@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 131, 238);
+}
+
+.display {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.end_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.results {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+.restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(235, 252, 6);
+}
+
+.title {
+    font-size: 100px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(113, 176, 228);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cell.x::before {
+    content: 'X';
+}
+
+.cell.o::before {
+    content: 'O';
+}

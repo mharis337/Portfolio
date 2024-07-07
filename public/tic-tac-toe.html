@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Project</title>
+  </head>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="tic">
+    <body>
+
+      <div class="top">
+        <h1>Tic-Tac-Toe Game</h1>
+        <img
+        src="images/Empty.png"
+        alt="Tic-Tac-Toe"
+        style="width: 20%; height: auto"
+      />
+      <h1> <a >Play</a></h1>
+      </div>
+
+      <div class="objective">
+        <h3>Objective</h3>
+        <p>Create a browser-based tic-tac-toe game where two players can take turns to mark spaces on a 3x3 grid, aiming to be the first to get three marks in a row, column, or diagonal.
+        </p>
+      </div>
+      <br></br>
+      <div class="Tech">
+        <h3> Technologies Used</h3>
+        <p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>         
+        </p>
+      </div>
+
+      <div class="Features">
+        <h3>Features</h3>
+        <ol>
+          <li><strong>Game Board</strong>: Display a 3x3 grid for the tic-tac-toe game.</li>
+          <li><strong>Turn Indicator</strong>: Show whose turn it is (X or O).</li>
+          <li><strong>End Screen</strong>: Display the winner or a draw message when the game ends.</li>
+          <li><strong>Restart Button</strong>: Allow players to restart the game after it ends.</li>
+        </ol>
+      </div>
+
+
+      <div class="Architecture">
+        <h3>Architecture</h3>
+        <ul>
+          <li><strong>HTML</strong>: Structure the game layout using HTML elements.</li>
+          <li><strong>CSS</strong>: Style the game for a visually appealing interface.</li>
+          <li><strong>JavaScript</strong>: Implement game logic and interactivity.</li>
+        </ul>
+      </div>
+
+      <div class="Tech_Details">
+          
+        <h3>Technical Details</h3>
+        <ol>
+          <li>
+            <strong>Module 1: Game Initialization</strong>
+            <ul>
+              <li>Create the game board using HTML and CSS.</li>
+              <li>Initialize variables to track game state (current player, board status, etc.).</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 2: Game Logic</strong>
+            <ul>
+              <li>Implement logic to switch turns between players.</li>
+              <li>Check for a winner or a draw after each move.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 3: Event Handling</strong>
+            <ul>
+              <li>Add event listeners to each cell of the grid to handle player moves.</li>
+              <li>Update the game state and UI based on player actions.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 4: End Game Handling</strong>
+            <ul>
+              <li>Display the end screen with the result (winner or draw).</li>
+              <li>Allow players to restart the game.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+
+      <div class="data">
+        <h3>Data Flow</h3>
+        <ul>
+          <li>Players interact with the game by clicking on cells in the grid.</li>
+          <li>Each click triggers a move, updating the board and checking for a winner or draw.</li>
+          <li>The game state is updated accordingly, and the UI reflects the current state of the game.</li>
+        </ul>
+      </div>
+
+
+      <div class="test">
+        <h3>Testing</h3>
+        <p>Use manual testing to ensure the game functions correctly (e.g., players can make moves, game ends correctly).</p>
+      </div>
+
+      <div class="future">
+        <h3>Future Improvements</h3>
+        <ul>
+          <li>Add a computer player for single-player mode.</li>
+          <li>Implement a more sophisticated AI for the computer player.</li>
+          <li>Enhance the UI/UX with animations and transitions.</li>
+        </ul>
+      </div>
+
+      <div class="visual">
+        <h3>Visual Layout</h3>
+        <ul>
+          <li>
+            <strong>Title</strong>
+            <ul>
+              <li>Displayed at the top, centered, showing the current player's turn</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Tic-Tac-Toe Board</strong>
+            <ul>
+              <li>Centered on the screen</li>
+              <li>3x3 grid with equally sized cells</li>
+            </ul>
+          </li>
+          <li>
+            <strong>End Screen</strong>
+            <ul>
+              <li>Overlays the game board when triggered</li>
+              <li>Displays the result message and a button to restart the game</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Styling Details</strong>
+            <ul>
+              <li>Consistent color scheme: blue background, yellow button, white text on end screen</li>
+              <li>Large, bold fonts for title and result text for clear visibility</li>
+              <li>Flexbox and grid layout techniques for center alignment and responsive design</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </body>
+  </div>
+  <link rel="stylesheet" type="text/css" href="styleTic.css" />
+  <link rel="stylesheet" type="text/css" href="styleProjectPage.css" />
+</html>

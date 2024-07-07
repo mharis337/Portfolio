@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tic{
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+
+h3 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+@media (min-width: 750px) {
+    .project {
+        max-width: 750px;
+        }
+}
