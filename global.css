@@ -31,7 +31,7 @@ body {
 .results {
     font-size: 100px;
     color: rgb(255, 255, 255);
-    font-family: fantasy;
+    font-family:  Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ body {
 
 .title {
     font-size: 100px;
-    font-family: fantasy;
+    font-family:  Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -76,4 +76,10 @@ body {
 
 .cell.o::before {
     content: 'O';
+}
+
+.scores {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
 }

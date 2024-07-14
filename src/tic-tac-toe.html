@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Project</title>
+    <title>Tic-Tac-Toe Project</title>
   </head>
   <header>
     <div class="navbar">
@@ -20,26 +20,26 @@
       <div class="top">
         <h1>Tic-Tac-Toe Game</h1>
         <img
-        src="/public/images/Empty.png"
-        alt="Tic-Tac-Toe"
-        style="width: 20%; height: auto"
-      />
-      <h1> <a href="/src/tic-tac-toe-game.html">Play</a></h1>
+          src="/public/images/Empty.png"
+          alt="Tic-Tac-Toe"
+          style="width: 20%; height: auto"
+        />
+        <h1><a href="/src/tic-tac-toe.php">Play</a></h1>
       </div>
 
       <div class="objective">
         <h3>Objective</h3>
-        <p>Create a browser-based tic-tac-toe game where two players can take turns to mark spaces on a 3x3 grid, aiming to be the first to get three marks in a row, column, or diagonal.
-        </p>
+        <p>Create a browser-based Tic-Tac-Toe game where two players can take turns marking spaces on a 3x3 grid, aiming to be the first to get three marks in a row, column, or diagonal.</p>
       </div>
       <br></br>
       <div class="Tech">
-        <h3> Technologies Used</h3>
+        <h3>Technologies Used</h3>
         <p>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>PHP</li>
           </ul>         
         </p>
       </div>
@@ -47,13 +47,13 @@
       <div class="Features">
         <h3>Features</h3>
         <ol>
-          <li><strong>Game Board</strong>: Display a 3x3 grid for the tic-tac-toe game.</li>
+          <li><strong>Game Board</strong>: Display a 3x3 grid for the Tic-Tac-Toe game.</li>
           <li><strong>Turn Indicator</strong>: Show whose turn it is (X or O).</li>
           <li><strong>End Screen</strong>: Display the winner or a draw message when the game ends.</li>
           <li><strong>Restart Button</strong>: Allow players to restart the game after it ends.</li>
+          <li><strong>Backend Integration</strong>: PHP backend to handle game state and moves.</li>
         </ol>
       </div>
-
 
       <div class="Architecture">
         <h3>Architecture</h3>
@@ -61,11 +61,11 @@
           <li><strong>HTML</strong>: Structure the game layout using HTML elements.</li>
           <li><strong>CSS</strong>: Style the game for a visually appealing interface.</li>
           <li><strong>JavaScript</strong>: Implement game logic and interactivity.</li>
+          <li><strong>PHP</strong>: Backend logic for handling game state and moves.</li>
         </ul>
       </div>
 
       <div class="Tech_Details">
-          
         <h3>Technical Details</h3>
         <ol>
           <li>
@@ -96,9 +96,15 @@
               <li>Allow players to restart the game.</li>
             </ul>
           </li>
+          <li>
+            <strong>Module 5: Backend Integration</strong>
+            <ul>
+              <li>PHP scripts to handle game moves and state on the server side.</li>
+              <li>AJAX calls to communicate between the frontend and backend.</li>
+            </ul>
+          </li>
         </ol>
       </div>
-
 
       <div class="data">
         <h3>Data Flow</h3>
@@ -106,13 +112,13 @@
           <li>Players interact with the game by clicking on cells in the grid.</li>
           <li>Each click triggers a move, updating the board and checking for a winner or draw.</li>
           <li>The game state is updated accordingly, and the UI reflects the current state of the game.</li>
+          <li>Moves are sent to the backend using AJAX, and the server updates the game state.</li>
         </ul>
       </div>
 
-
       <div class="test">
         <h3>Testing</h3>
-        <p>Use manual testing to ensure the game functions correctly (e.g., players can make moves, game ends correctly).</p>
+        <p>Use manual testing to ensure the game functions correctly (e.g., players can make moves, game ends correctly). Additionally, test the backend integration to ensure seamless communication between the frontend and backend.</p>
       </div>
 
       <div class="future">
@@ -121,6 +127,7 @@
           <li>Add a computer player for single-player mode.</li>
           <li>Implement a more sophisticated AI for the computer player.</li>
           <li>Enhance the UI/UX with animations and transitions.</li>
+          <li>Add a database to persist game states and player scores.</li>
         </ul>
       </div>
 
@@ -130,29 +137,29 @@
           <li>
             <strong>Title</strong>
             <ul>
-              <li>Displayed at the top, centered, showing the current player's turn</li>
+              <li>Displayed at the top, centered, showing the current player's turn.</li>
             </ul>
           </li>
           <li>
             <strong>Tic-Tac-Toe Board</strong>
             <ul>
-              <li>Centered on the screen</li>
-              <li>3x3 grid with equally sized cells</li>
+              <li>Centered on the screen.</li>
+              <li>3x3 grid with equally sized cells.</li>
             </ul>
           </li>
           <li>
             <strong>End Screen</strong>
             <ul>
-              <li>Overlays the game board when triggered</li>
-              <li>Displays the result message and a button to restart the game</li>
+              <li>Overlays the game board when triggered.</li>
+              <li>Displays the result message and a button to restart the game.</li>
             </ul>
           </li>
           <li>
             <strong>Styling Details</strong>
             <ul>
-              <li>Consistent color scheme: blue background, yellow button, white text on end screen</li>
-              <li>Large, bold fonts for title and result text for clear visibility</li>
-              <li>Flexbox and grid layout techniques for center alignment and responsive design</li>
+              <li>Consistent color scheme: blue background, yellow button, white text on end screen.</li>
+              <li>Large, bold fonts for title and result text for clear visibility.</li>
+              <li>Flexbox and grid layout techniques for center alignment and responsive design.</li>
             </ul>
           </li>
         </ul>
@@ -161,4 +168,5 @@
   </div>
   <link rel="stylesheet" type="text/css" href="/styles/styleTic.css" />
   <link rel="stylesheet" type="text/css" href="/styles/styleProjectPage.css" />
+  <script src="/assets/tic-tac-toe.js"></script>
 </html>
