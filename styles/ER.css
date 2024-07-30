@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+
+body, html {
+    background-color: rgb(204, 204, 204);
+    margin: 0;
+    padding: 0;
+    font-family: "Modak", sans-serif;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+}
+
+.nav {
+    background-color: #2CBADA;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 20px; 
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 60px;
+    white-space: nowrap;
+    margin: 0;
+    padding-left: 25vw;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.cross {
+    height: 120px;
+    padding: 0 15%; 
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 25vw;
+}
+
+.check-wait-time {  
+    height: 60px;
+    width: 240px;
+    background-color: #FF7F50;
+    color: #2F50B7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    white-space: nowrap; 
+}
+
+.check-wait-time:hover {
+    background-color: #fa9875;
+}
+
+.hero {
+    min-height: calc(15vw + 15vh);
+    width: 100%;
+    background-image: url('/public/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-container {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    box-sizing: border-box;
+}
+
+.title {
+    color: #2F50B7;
+    font-size: 3vw; 
+    margin: 8px 0; 
+}
+
+.description {
+    font-size: 1vw;
+    margin: 20px 0;
+    max-width: 600px;
+    color: white;
+}
+
+.queue-button {
+    height: calc(2vw + 2vh);
+    width: 10vw;
+    background-color: #333333;
+    color: #2F50B7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5vw; 
+    margin-top: 16px; 
+    margin-left: 8vw;
+}
+
+.admin-buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.admit-button, .remove-button {
+    height: calc(2vw + 2vh);
+    width: 10vw;
+    background-color: #042aff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5vw; 
+}
+
+.queue-button:hover {
+    background-color: #fa9875;
+}
+
+.wait {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.wait-time, .patients {
+    background: linear-gradient(to top, #2F50B7, #00C0D6);
+    height: 20vw;
+    min-height: 300px;
+    width: 100%;
+    margin: 10px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.wait-time {
+    justify-content: right;
+}
+
+.title-card {
+    font-size: 3vw;
+    margin: 0px;
+}
+
+.title-card-wait {
+    font-size: 2.5vw;
+    margin: 0px;
+    white-space: nowrap; 
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.inner-text {
+    font-size: 2vw;
+    margin: 0px;
+}
+
+.enterQueue {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-shadow: none;
+}
+
+.form-title {
+    font-family: "Modak", sans-serif;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+    font-size: 40px;
+}
+
+.form-container p {
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin: 10px 0 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="range"],
+.form-container button {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#severity {
+    width: 80%;
+}
+
+#severity-value {
+    position: absolute;
+    top: -30px;
+    background-color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal, .adminLoginModal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content, .admin-modal-content {
+    background-color: #28A745;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+}
+
+.close-button, .admin-close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus,
+.admin-close-button:hover,
+.admin-close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkWaitTime {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+}
+
+.hero-container-admin {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    box-sizing: border-box;
+}
+
+.title-admin {
+    color: #2F50B7;
+    font-size: 3vw; 
+    margin: 8px 0; 
+}
+
+.description-admin {
+    font-size: 1vw;
+    margin: 20px 0;
+    max-width: 600px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patient-list {
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    width: 80vw;
+    background-color: white;
+    min-height: calc(100vh - 10vw);
+    box-sizing: border-box;
+    font-size: 4vw;
+    white-space: nowrap; 
+}
+
+.logout {
+    height: calc(2vw + 2vh);
+    width: 10vw;
+    background-color: #FF7F50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5vw; 
+    margin-left: 30vw;
+}
+
+@media (max-width: 1366px) {
+    .logo {
+        font-size: 55px;
+    }
+    
+    .cross {
+        height: 100px;
+    }
+
+    .hero-container {
+        width: 45vw;
+    }
+
+    .title-admin {
+        font-size: 3vw;
+    }
+
+    .title {
+        font-size: 4vw; 
+    }
+    
+    .description {
+        font-size: 1.5vw;
+        margin: 20px 0;
+        max-width: 600px;
+    }
+
+    .description-admin {
+        font-size: 1vw;
+    }
+    
+    .queue-button, .logout {
+        font-size: 2vw;
+        white-space: nowrap; 
+        width: 12vw;
+        margin-left: 15vw;
+    }
+
+    .title-card {
+        font-size: 60px;
+    }
+    
+    .inner-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav {
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 50px;
+        padding-left: 0px;
+    }
+
+    .cross {
+        padding: 0 5%;
+    }
+
+    .buttons, .logout {
+        transform: scale(0.9);
+    }
+
+    .hero-container {
+        width: 45vw;
+    }
+
+    .title {
+        font-size: 4vw; 
+        white-space: nowrap; 
+    }
+    
+    .description {
+        font-size: 2vw;
+    }
+    
+    .queue-button {
+        font-size: 2vw;
+        white-space: nowrap; 
+        width: 15vw;
+        margin-left: 13vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .cross {
+        display: none;
+    }
+
+    .hero-container {
+        width: 60vw;
+    }
+
+    .title {
+        font-size: 6vw; 
+        white-space: nowrap; 
+    }
+    
+    .description {
+        font-size: 3vw;
+        margin: 20px 0;
+        max-width: 600px;
+    }
+    
+    .queue-button, .logout {
+        font-size: 3vw;
+        white-space: nowrap; 
+        width: 20vw;
+        margin-left: 17vw;
+    }
+
+    .patient-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 810px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 5vw;
+    }
+
+    .buttons {
+        transform: scale(0.6);
+        padding-right: 5vw;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .hero-container {
+        width: 60vw;
+    }
+
+    .title {
+        font-size: 6vw; 
+        white-space: nowrap; 
+    }
+    
+    .description {
+        font-size: 3vw;
+        margin: 20px 0;
+        max-width: 600px;
+    }
+    
+    .queue-button, .logout {
+        font-size: 3vw;
+        white-space: nowrap; 
+        width: 20vw;
+        margin-left: 17vw;
+    }
+}

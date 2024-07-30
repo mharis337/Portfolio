@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ER Waiting Room Project</title>
+  </head>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="er-waiting-room">
+    <body>
+
+      <div class="top">
+        <h1>ER Waiting Room Management</h1>
+        <img
+          src="/public/images/main.png"
+          alt="Tic-Tac-Toe"
+          style="width: 100%; height: auto"
+        />
+        <h1><a href="/src/ER.html">Manage</a></h1>
+      </div>
+
+      <div class="objective">
+        <h3>Objective</h3>
+        <p>Create a web-based application for managing the waiting room of an emergency department, allowing staff to track patients, prioritize care, and manage room assignments efficiently.</p>
+      </div>
+      <br></br>
+      <div class="Tech">
+        <h3>Technologies Used</h3>
+        <p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Postgres</li>
+          </ul>         
+        </p>
+      </div>
+
+      <div class="Features">
+        <h3>Features</h3>
+        <ol>
+          <li><strong>Patient Registration</strong>: Form to register new patients with details like name, symptoms, and priority level.</li>
+          <li><strong>Patient List</strong>: Display a list of patients currently in the waiting room, sortable by priority, time of arrival, etc.</li>
+          <li><strong>Patient Details</strong>: View detailed information of each patient.</li>
+          <li><strong>Room Assignment</strong>: Admit patients to available rooms based on priority.</li>
+          <li><strong>Notifications</strong>: Alert staff about high-priority patients or room availability.</li>
+          <li><strong>Backend Integration</strong>: PHP backend to handle patient data, room admission, and notifications.</li>
+        </ol>
+      </div>
+
+      <div class="Architecture">
+        <h3>Architecture</h3>
+        <ul>
+          <li><strong>HTML</strong>: Structure the application layout using HTML elements.</li>
+          <li><strong>CSS</strong>: Style the application for a visually appealing and user-friendly interface.</li>
+          <li><strong>JavaScript</strong>: Implement interactive features and real-time updates.</li>
+          <li><strong>PHP</strong>: Backend logic for managing patient data and room assignments.</li>
+          <li><strong>Postgres</strong>: Database to store patient records and room information.</li>
+        </ul>
+      </div>
+
+      <div class="Tech_Details">
+        <h3>Technical Details</h3>
+        <ol>
+          <li>
+            <strong>Module 1: Initialization</strong>
+            <ul>
+              <li>Create the main layout with HTML and CSS.</li>
+              <li>Initialize variables to track patient data, room availability, and notifications.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 2: Patient Registration</strong>
+            <ul>
+              <li>Implement a form for registering new patients.</li>
+              <li>Validate and submit patient data to the backend.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 3: Patient List</strong>
+            <ul>
+              <li>Display a sortable list of patients.</li>
+              <li>Use JavaScript to update the list dynamically.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 4: Patient Details</strong>
+            <ul>
+              <li>Create a detailed view for each patient.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 5: Room Assignment</strong>
+            <ul>
+              <li>Implement room assignment logic.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 6: Notifications</strong>
+            <ul>
+              <li>Use JavaScript to display alerts and updates.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Module 7: Backend Integration</strong>
+            <ul>
+              <li>PHP scripts to handle patient data and room assignments.</li>
+              <li>Use AJAX for seamless communication between frontend and backend.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <div class="data">
+        <h3>Data Flow</h3>
+        <ul>
+          <li>Staff input patient details, which are sent to the backend and stored in the database.</li>
+          <li>Data is fetched from the database and displayed dynamically on the frontend.</li>
+          <li>Staff admit patients into rooms, updating the backend and reflecting changes in real-time.</li>
+        </ul>
+      </div>
+
+      <div class="test">
+        <h3>Testing</h3>
+        <p>Perform manual testing to ensure the functionality of patient registration, list updates, and notifications. Test backend integration to ensure smooth data handling between frontend and backend.</p>
+      </div>
+
+      <div class="visual">
+        <h3>Visual Layout</h3>
+        <ul>
+          <li>
+            <strong>Title</strong>
+            <ul>
+              <li>Displayed at the top center of the page, showing "City Hospital" with a prominent logo.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Navigation Bar</strong>
+            <ul>
+              <li>Positioned at the top of the page.</li>
+              <li>Includes links to "Check Wait Time" and "Admin Login" on the right side.</li>
+              <li>Styled with a blue background and white text.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Main Section</strong>
+            <ul>
+              <li>
+                <strong>Welcome Message</strong>
+                <ul>
+                  <li>Centered in the page with a blue background and white text.</li>
+                  <li>Contains the message "Welcome to City Hospital's ER Waitlist" with a button to "Enter Queue".</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Patient Statistics</strong>
+                <ul>
+                  <li>Positioned below the welcome message.</li>
+                  <li>Two boxes side-by-side displaying "Patients in ER" and "Estimated Wait Time".</li>
+                  <li>Uses a gradient blue background with white text.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Forms</strong>
+            <ul>
+              <li>
+                <strong>Enter Queue Form</strong>
+                <ul>
+                  <li>Appears below the main section when "Enter Queue" is clicked.</li>
+                  <li>Contains input fields for Name, Injury, and Severity of Pain with a slider.</li>
+                  <li>Submit button at the bottom.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Check Wait Time Form</strong>
+                <ul>
+                  <li>Similar to the Enter Queue Form.</li>
+                  <li>Includes input fields for Name and 3-Digit Code with a submit button.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Notifications</strong>
+            <ul>
+              <li>Green banner that appears at the top of the screen after form submissions.</li>
+              <li>Displays messages like "You have been added to the queue" or "Hello [Name], your estimated wait time is: [Time] minutes."</li>
+              <li>White text on a green background with a close button.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Admin Login</strong>
+            <ul>
+              <li>Simple login form for admin access.</li>
+              <li>Includes input fields for Username and Password with a submit button.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Admin Dashboard</strong>
+            <ul>
+              <li>
+                <strong>Patient Queue</strong>
+                <ul>
+                  <li>Table displaying a list of patients with columns for ID, Name, Injury, Severity, and Wait Time.</li>
+                  <li>Action buttons to "Admit" or "Remove" patients.</li>
+                  <li>Uses a white background for the table with blue buttons and text.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Styling Details</strong>
+            <ul>
+              <li>Consistent color scheme: Blue background for main sections, gradient blue for statistics, white text throughout, and green for notifications.</li>
+              <li>Rounded corners for input fields and buttons.</li>
+              <li>Bold, readable fonts for all text to ensure clarity.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </body>
+  </div>
+  <link rel="stylesheet" type="text/css" href="/styles/styleER.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/styleProjectPage.css" />
+</html>

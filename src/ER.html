@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>City Hospital ER Waitlist</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/ER.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/styleProjectPage.css" />
+  </head>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <nav class="nav">
+      <p class="logo"><a href="/src/ER.html">City Hospital</a></p>
+      <img class="cross" src="/public/images/cross.png" />
+      <div class="buttons">
+        <div>
+          <a href="/" id="check-wait-time-button" class="check-wait-time"
+            >Check Wait Time</a
+          >
+        </div>
+        <div><a href="/" id="admin-login-button" class="admin-login-button check-wait-time">Admin Login</a></div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-container">
+        <div>
+          <p class="title">ER Waitlist</p>
+          <p class="description">
+            Welcome to City Hospital's ER Waitlist. Please enter the queue to
+            get an estimated wait time and receive updates about your position
+            in line
+          </p>
+          <a href="#" id="queue-button" class="queue-button"> Enter Queue </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="enterQueue" class="enterQueue">
+      <div class="form-container">
+        <h2>Enter Queue</h2>
+        <form id="queueForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="injury">Injury:</label>
+          <input type="text" id="injury" name="injury" required />
+          <label for="severity">Severity of Pain (1-10):</label>
+          <div class="slider-container">
+            <input
+              type="range"
+              id="severity"
+              name="severity"
+              min="1"
+              max="10"
+              required
+            />
+            <span id="severity-value">5</span>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="checkWaitTime" class="checkWaitTime">
+      <div class="form-container">
+        <h2>Check Wait Time</h2>
+        <form id="checkWaitTimeForm">
+          <label for="checkName">Name:</label>
+          <input type="text" id="checkName" name="checkName" required />
+          <label for="checkCode">3-Digit Code:</label>
+          <input
+            type="text"
+            id="checkCode"
+            name="checkCode"
+            maxlength="3"
+            required
+          />
+          <button type="submit">Check</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p id="modal-message"></p>
+      </div>
+    </div>
+
+
+
+    <div id="adminLoginModal" class="adminLoginModal">
+        <div class="admin-modal-content">
+            <span class="admin-close-button">&times;</span>
+            <form id="adminLoginForm">
+                <h2>Admin Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginError" style="color:red;"></p>
+        </div>
+    </div>
+
+    <div id="mainContent" class="wait">
+        <div class="patients">
+          <p class="title-card">Patients in ER</p>
+          <p class="inner-text" id="totalPatients">Total: 57</p>
+          <p class="inner-text" id="inTreatment">In Treatment: 36</p>
+          <p class="inner-text" id="waiting">Waiting: 20</p>
+        </div>
+        <div class="wait-time">
+          <p class="title-card-wait">Estimated Wait Time</p>
+          <p class="inner-text" id="estimatedWait">x hrs</p>
+        </div>
+      </div>
+
+    <script src="/public/assets/ER.js"></script>
+  </body>
+</html>

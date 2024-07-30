@@ -1,0 +1,40 @@
+#!/bin/bash
+
+DB_NAME="emergency_waitlist"
+DB_USER="student"
+DB_PASSWORD="password"
+DB_HOST="localhost"
+PROJECT_DIR="$(pwd)"
+SCHEMA_FILE="$PROJECT_DIR/public/db/schema.sql"
+SEED_FILE="$PROJECT_DIR/public/db/seed.sql"
+
+sudo apt update
+sudo apt install -y php php-pgsql postgresql
+sudo service postgresql restart
+
+sudo -u postgres psql -c "DROP DATABASE IF EXISTS $DB_NAME;"
+
+export PGPASSWORD=$DB_PASSWORD
+
+sudo -u postgres psql <<EOF
+DO \$\$
+BEGIN
+    IF NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = '$DB_USER') THEN
+        CREATE ROLE $DB_USER WITH LOGIN PASSWORD '$DB_PASSWORD';
+    END IF;
+END
+\$\$;
+CREATE DATABASE $DB_NAME OWNER $DB_USER;
+GRANT ALL PRIVILEGES ON DATABASE $DB_NAME TO $DB_USER;
+EOF
+
+sudo -u postgres psql -d $DB_NAME -c "GRANT ALL PRIVILEGES ON SCHEMA public TO $DB_USER;"
+
+psql -U $DB_USER -d $DB_NAME -h $DB_HOST -f $SCHEMA_FILE
+psql -U $DB_USER -d $DB_NAME -h $DB_HOST -f $SEED_FILE
+
+echo "Database reset successfully: All tables dropped, created, and seeded."
+
+cd $PROJECT_DIR && php -S localhost:4000
+
+echo "Setup complete. Your web server is running on localhost:4000 and the database is set up."
